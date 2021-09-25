@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root{
+--Cyan: hsl(180, 66%, 49%);
+--DarkViolet: hsl(257, 27%, 26%);
+
+--Red: hsl(0, 87%, 67%);
+--Gray: hsl(0, 0%, 75%);
+--GrayishViolet: hsl(257, 7%, 63%);
+
+--VeryDarkBlue: hsl(255, 11%, 22%);
+--VeryDarkViolet: hsl(260, 8%, 14%);
+}
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: var(--GrayishViolet);
+    font-size: 18px;
+    
+}
+h1,h2,h3{
+    color: var(--VeryDarkViolet);
+}
+/* navbar */
+
+
+.body--header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4.5rem;
+}
+
+
+.body--header nav{
+    display: flex;
+    align-items: center;
+}
+.body--header nav ul{
+    display: flex;
+    list-style: none;
+    padding-left: 2rem;
+    color: var(--GrayishViolet);
+    font-weight: 700;
+}
+.desktop a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.desktop a:nth-child(1){
+    color: var(--GrayishViolet);
+    padding-right: 1.5rem;
+}
+.btn{
+    background-color: var(--Cyan);
+    padding: .8rem 1.5rem;
+    color: white;
+    border-radius: 60px;
+    text-decoration: none;
+    border: none;
+    font-weight: 700;
+}
+.btn:focus{
+    outline: none;
+}
+.body--header nav ul li{
+    padding: 0 1rem;
+}
+.mobile{
+    padding: 17px 17px;
+    background-image: url(images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+}
+.desktop{
+    
+}
+/* navbar */
+
+/* hero */
+main{
+    padding: 0 4.5rem;
+    overflow-x: visible;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow-x: visible;
+}
+
+
+.hero .left,.hero .right{
+    flex: 1;
+}
+.hero .right {
+    width: 100%;
+    height: 100%;
+}
+.hero .right figure{
+    background-image: url(images/illustration-working.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 99;
+    transform: translateX(150px);
+}
+.hero h1{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    
+}
+.hero p{
+    max-width: 40ch;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+/* hero */
+
+/* shortening */
+.short{
+    width: 100%;
+    height: 100%;
+}
+.shortening{
+    background-color: var(--DarkViolet);
+    height: 160px;
+    display: flex;
+    align-items: center;
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    border-radius: 9px;
+    justify-content: center;
+}
+.shortening form{
+    display: flex;
+    width: 90%;
+}
+.shortening form input{
+    height: 50px;
+    border-radius: 7px;
+}
+.shortening form input:nth-child(1){
+    width: calc(85% - 1rem);
+    padding:0 1rem;
+    font-size: 18px;
+    margin-right: 1rem;
+    border: none;
+}
+.shortening form input:nth-child(1):focus{
+    outline: none;
+}
+.shortening form input:nth-child(2){
+    width: 15%;
+    
+}
+.shorted--links{
+    width: 100%;
+}
+.shorted--links li{
+    width: 100%;
+}
+/* crear como se mostrara la url acortada */
+
+/* shortening */
+
+/* footer */
+.social-media-icons ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .social-media-icons ul li {
+    padding: 0 0.4rem;
+  }
+  
+  .social-media-icons ul li a i {
+    transition: 300ms ease;
+    color: white;
+  }
+  
+  .fa-twitter-square:hover {
+    color: hsl(210, 82%, 64%);
+  }
+  .fa-facebook-square:hover {
+    color: hsl(210, 87%, 49%);
+  }
+  .fa-instagram:hover {
+    color: hsl(37, 89%, 58%);
+  }
+  .fa-pinterest-square:hover {
+    color: rgb(216, 76, 76);
+  }
+  .social-media-icons ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .social-media-icons ul li {
+    padding: 0 0.4rem;
+  }
