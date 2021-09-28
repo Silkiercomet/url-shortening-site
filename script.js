@@ -35,30 +35,3 @@ const shortAndAdd = compose(shortLink, createLi);
 btn.addEventListener("click", function () {
     shortAndAdd(document.querySelector("#shorten").value);
   });
-//shortAndAdd(document.querySelector("#shorten").value)
-
-
-
-// const shortLink = async function(y){
-//     try {
-//         const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${y}`);
-//         let link = await response.json()
-//         //console.log(link.result.full_short_link)
-//         console.log( link.result.full_short_link)
-//     }catch (err){
-//         console.log(err)
-//     }
-// }
-
-// const createLi = (x) => {
-
-//     let newLi = document.createElement("li")
-//     newLi.classList.add("shorted--link")
-//     newLi.innerHTML= `
-//     <span>frontendmentor.io</span>
-//     <span><a href="#">${x}</a>
-//     <a href="${x}" class="btn">copy</a></span>
-//     `;
-//     menu.appendChild(newLi)
-
-// }
