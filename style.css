@@ -219,6 +219,24 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.error-2{
+  border: 2px solid red;
+  position: relative;
+}
+form{
+  position: relative;
+}
+.error::after{
+  content: "please add a valid link";
+  font-style: italic;
+  color: red;
+  position: absolute;
+  bottom: -25px;
+  z-index: 99;
+}
+.btn-c{
+  cursor: pointer;
+}
 
 /* shortening */
 
