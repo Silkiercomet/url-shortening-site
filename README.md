@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot.jpg)
+![screenshot of the proyect](./Screenshot.png)
+
 
 
 
