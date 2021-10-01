@@ -45,6 +45,7 @@ h3 {
 .body--header nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .body--header nav ul {
   display: flex;
@@ -84,7 +85,70 @@ h3 {
   cursor: pointer;
   display: none;
 }
-.desktop {
+#hamburguer-menu:checked ~ .mobile__menu{
+  transform: translateY(180px);
+}
+.mobile__menu{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transform: translateY(-280px);
+  transition: 400ms ease-in-out;
+}
+.mobile__menu ul{
+  position: relative;
+  z-index: 99;
+  list-style: none;
+  padding: 1.5rem 1rem;
+  background-color: var(--DarkViolet);
+  width: 90%;
+  height: 250px;
+  border-radius: 7px;
+}
+.mobile__menu ul li {
+  
+  text-align: center;
+}
+.mobile__menu ul li a:nth-child(5){
+  padding-top: 2.5rem;
+
+}
+.mobile__menu ul li a{
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  
+}
+.mobile__menu ul li:not(:nth-child(5)){
+padding: .4rem 0;
+  
+}
+.btn-h{
+  background-color: var(--Cyan);
+  padding: 0.8rem 3.5rem;
+  color: white;
+  border-radius: 60px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  
+
+}
+.btn-C{
+  padding-top: 1rem;
+}
+.top-border{
+  margin-top: .8rem;
+  border-top: 1px solid var(--Gray);
+  padding-top: .8rem;
 }
 /* navbar */
 
@@ -131,7 +195,9 @@ main {
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
-
+#hamburguer-menu{
+  display: none;
+}
 /* hero */
 
 /* shortening */
